@@ -34,4 +34,4 @@ The following guide was tested on a Compute VM running in Oracle Cloud Infrastru
 
     `sudo systemctl start oic-agent`
 
-NB. Give 30s-1min between start/stop commands, to allow state synchronization between the agent and the OIC instance.
+__NB. Give 30s-1min between start/stop commands, to allow state synchronization between the agent and the OIC instance.
