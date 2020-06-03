@@ -1,2 +1,3 @@
-# oci-oic
-Resources for Oracle Integration (OIC)
+# Resources for Oracle Integration (OIC)
+
+## [Oracle Integration (OIC) - Connectivity Agent as a Linux Service](#connectivity-agent/README.md)

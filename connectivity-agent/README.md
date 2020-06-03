@@ -32,7 +32,7 @@ The following guide was tested on a Compute VM running in Oracle Cloud Infrastru
 
     `./oic-agent.sh status`
 
-    To view the command output, under AGENT_HOME check the init.log, `tail -f /home/opc/oic-agent/init.log`
+    To view the command output, under AGENT_HOME check the init.log: `tail -f /home/opc/oic-agent/init.log`
 1. Using systemctl commands
 
     `sudo systemctl start oic-agent`
