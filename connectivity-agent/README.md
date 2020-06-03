@@ -14,6 +14,7 @@ The following guide was tested on a Compute VM running in Oracle Cloud Infrastru
 1. Copy oic-agent.sh under AGENT_HOME and set execute permission.
 
     `cp oic-agent.sh /home/opc/oic-agent`
+    
     `chmod 740 /home/opc/oic-agent/oic-agent.sh`
 1. Copy oic-agent.service under `/etc/systemd/system`
 
