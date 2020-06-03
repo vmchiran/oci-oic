@@ -11,10 +11,10 @@ The following guide was tested on a Compute VM running in Oracle Cloud Infrastru
 
 ## Setting up the Linux Service
 1. If using different AGENT_HOME, modify oic-agent.sh and oic-agent.service accordingly.
-1. Copy oic-agent.sh under AGENT_HOME.
-1. Set execute permission on `oic-agent.sh`
+1. Copy oic-agent.sh under AGENT_HOME and set execute permission.
 
-    `chmod 740 oic-agent.sh`
+    `cp oic-agent.sh /home/opc/oic-agent`
+    `chmod 740 /home/opc/oic-agent/oic-agent.sh`
 1. Copy oic-agent.service under `/etc/systemd/system`
 
     `sudo cp oic-agent.service /etc/systemd/system/`
@@ -33,3 +33,5 @@ The following guide was tested on a Compute VM running in Oracle Cloud Infrastru
 1. Using systemctl commands
 
     `sudo systemctl start oic-agent`
+
+NB. Give 30s-1min between start/stop commands, to allow state synchronization between the agent and the OIC instance.
