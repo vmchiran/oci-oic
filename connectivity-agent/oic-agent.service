@@ -1,0 +1,12 @@
+[Unit]
+Description=OIC Agent Service
+
+[Service]
+Type=forking
+WorkingDirectory=/home/opc/oic-agent
+ExecStart=/home/opc/oic-agent/oic-agent.sh start
+User=opc
+Group=opc
+
+[Install]
+WantedBy=multi-user.target
