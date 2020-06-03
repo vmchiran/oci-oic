@@ -1,5 +1,7 @@
 # Oracle Integration (OIC) - Connectivity Agent as a Linux Service
-The following guide was tested on a Compute VM running in Oracle Cloud Infrastructure (OCI) with CentOS 7.
+The following guide explains how to set up the OIC connectivity agent as a linux service and control the agent using a bash script to issue start / stop commands.
+
+The setup was tested on a Compute VM with CentOS 7, running in Oracle Cloud Infrastructure (OCI).
 
 ## Paths used in this guide
 * AGENT_HOME: `/home/opc/oic-agent`
