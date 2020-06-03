@@ -14,7 +14,7 @@ The following guide was tested on a Compute VM running in Oracle Cloud Infrastru
 1. Copy oic-agent.sh under AGENT_HOME and set execute permission.
 
     `cp oic-agent.sh /home/opc/oic-agent`
-    
+
     `chmod 740 /home/opc/oic-agent/oic-agent.sh`
 1. Copy oic-agent.service under `/etc/systemd/system`
 
@@ -31,6 +31,8 @@ The following guide was tested on a Compute VM running in Oracle Cloud Infrastru
     `./oic-agent.sh stop`
 
     `./oic-agent.sh status`
+
+    To view the command output, under AGENT_HOME check the init.log, `tail -f /home/opc/oic-agent/init.log`
 1. Using systemctl commands
 
     `sudo systemctl start oic-agent`
