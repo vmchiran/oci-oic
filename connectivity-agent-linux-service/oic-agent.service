@@ -13,8 +13,8 @@ RestartSec=60s
 User=opc
 Group=opc
 WorkingDirectory=/home/opc/oic-agent
-ExecStart=/home/opc/oic-agent/oic-agent.sh start
-ExecStop=/home/opc/oic-agent/oic-agent.sh start
+ExecStart=/bin/bash /home/opc/oic-agent/oic-agent.sh start
+ExecStop=/bin/bash /home/opc/oic-agent/oic-agent.sh start
 
 [Install]
 WantedBy=multi-user.target
