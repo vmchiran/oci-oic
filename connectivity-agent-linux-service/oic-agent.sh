@@ -5,6 +5,7 @@
 # - https://automationrhapsody.com/install-java-application-linux-service/
 # - https://www.thegeekdiary.com/centos-rhel-7-how-to-make-custom-script-to-run-automatically-during-boot/
 # - https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units
+# - https://unix.stackexchange.com/questions/664000/what-is-the-correct-format-to-specify-restartsec-in-service-file
 
 BASE_DIR=/home/opc/oic-agent
 START_COMMAND="java -jar $BASE_DIR/connectivityagent.jar"
