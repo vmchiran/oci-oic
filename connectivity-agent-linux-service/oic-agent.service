@@ -1,12 +1,20 @@
 [Unit]
-Description=OIC Agent Service
+Description=OIC Connectivity Agent Service
+After=iscsid.service
+
+StartLimitIntervalSec=500
+StartLimitBurst=5
 
 [Service]
-Type=forking
-WorkingDirectory=/home/opc/oic-agent
-ExecStart=/home/opc/oic-agent/oic-agent.sh start
+Type=simple
+RemainAfterExit=yes
+Restart=on-failure
+RestartSec=60s
 User=opc
 Group=opc
+WorkingDirectory=/home/opc/oic-agent
+ExecStart=/home/opc/oic-agent/oic-agent.sh start
+ExecStop=/home/opc/oic-agent/oic-agent.sh start
 
 [Install]
 WantedBy=multi-user.target
