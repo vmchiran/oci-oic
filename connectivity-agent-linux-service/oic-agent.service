@@ -14,7 +14,7 @@ User=opc
 Group=opc
 WorkingDirectory=/home/opc/oic-agent
 ExecStart=/bin/bash /home/opc/oic-agent/oic-agent.sh start
-ExecStop=/bin/bash /home/opc/oic-agent/oic-agent.sh start
+ExecStop=/bin/bash /home/opc/oic-agent/oic-agent.sh stop
 
 [Install]
 WantedBy=multi-user.target
